@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Inter:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(image/body.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: initial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    margin-top: 6rem;
+    margin-left: 7rem;
+}
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3{
+    font-size: 44px;
+    position: absolute;
+    bottom: 5%;
+    left: 45%;
+    margin: 0;
+    opacity: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.342);
+    border-radius: 5rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-bottom: 0.5rem;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    text-decoration: underline;
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4), .panel:nth-of-type(5){
+        display: none;
+    }
+}
+
+
+/* Soup */
+
+section{
+    border: 5px solid red;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
